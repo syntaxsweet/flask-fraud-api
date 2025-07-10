@@ -10,7 +10,9 @@ print("✅ Flask and modules imported")
 app = Flask(__name__)
 
 print("📦 Loading the model...")
-model = joblib.load('../fraud_model.pkl')
+model = joblib.load('fraud_model.pkl')  # ✅ correct path inside app/
+
+
 print("✅ Model loaded successfully")
 
 @app.route('/')
